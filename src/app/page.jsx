@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Shortcut from "./components/Shortcut";
-import FlashSaleCountdown from "./components/Flashsale/FlashSaleCountdown";
-import FlashSaleCarousel from "./components/Flashsale/FlashsaleCarousel";
-import KategoriCarousel from "./components/Kategori/KategoriCarousel";
-import ProdukTerlarisCarousel from "./components/ProdukTerlaris/ProdukTerlarisCarousel";
-import ProdukRekomendasi from "./components/ProdukRekomendasi/ProdukRekomendasi";
+import Shortcut from "@/app/components/Shortcut";
+import FlashSaleCountdown from "@/app/components/Flashsale/FlashSaleCountdown";
+import FlashSaleCarousel from "@/app/components/Flashsale/FlashsaleCarousel";
+import KategoriCarousel from "@/app/components/Kategori/KategoriCarousel";
+import ProdukTerlarisCarousel from "@/app/components/ProdukTerlaris/ProdukTerlarisCarousel";
+import ProdukRekomendasi from "@/app/components/ProdukRekomendasi/ProdukRekomendasi";
 import Footer from "@/app/components/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "@/app/components/Navbar/Navbar";
 
 export const metadata = {
   title: "Shopee Indonesia | Situs Belanja Online Terlengkap & Terpercaya",
