@@ -1,4 +1,4 @@
-import Produk from "../Produk"
+import Produk from "@/app/components/Produk"
 
 export default async function ProdukRekomendasi() {
     const res = await fetch("http://localhost:3000/api/produk-rekomendasi")

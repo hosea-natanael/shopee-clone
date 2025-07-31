@@ -1,8 +1,8 @@
 import Link from "next/link"
-import Language from "./Language"
-import Download from "./Download"
-import Cart from "./Cart"
-import Username from "./Username"
+import Language from "@/app/components/Navbar/Language"
+import Download from "@/app/components/Navbar/Download"
+import Cart from "@/app/components/Navbar/Cart"
+import Username from "@/app/components/Navbar/Username"
 
 
 

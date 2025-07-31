@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link";
-import PasswordField from "./PasswordField";
+import PasswordField from "@/app/login/components/PasswordField";
 import { useMemo, useState } from "react";
-import { useLogin } from "../lib/useLogin";
+import { useLogin } from "@/app/login/lib/useLogin";
 
 export default function LoginForm() {
     const [username, setUsername] = useState("")

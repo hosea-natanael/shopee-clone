@@ -1,5 +1,5 @@
 import Carousel from "@/app/components/Carousel"
-import FlashSaleItem from "./FlashSaleItem"
+import FlashSaleItem from "@/app/components/Flashsale/FlashSaleItem"
 
 export default async function FlashSaleCarousel() {
     const data = await fetch("http://localhost:3000/api/flash-sale")

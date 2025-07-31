@@ -1,4 +1,4 @@
-import Kategori from "./Kategori";
+import Kategori from "@/app/components/Kategori/Kategori";
 import Carousel from "@/app/components/Carousel";
 
 export default function KategoriCarousel() {

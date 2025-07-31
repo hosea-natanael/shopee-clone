@@ -1,10 +1,10 @@
 import Navbar from "@/app/components/Navbar/Navbar"
 import Link from "next/link"
-import ImageSelector from "./components/ImageSelector"
-import Stars from "./components/Stars"
-import Category from "./components/Category"
-import Price from "./components/Price"
-import Quantity from "./components/Quantity"
+import ImageSelector from "@/app/product/[id]/components/ImageSelector"
+import Stars from "@/app/product/[id]/components/Stars"
+import Category from "@/app/product/[id]/components/Category"
+import Price from "@/app/product/[id]/components/Price"
+import Quantity from "@/app/product/[id]/components/Quantity"
 
 export default async function Page({params}) {
     const { id } = await params

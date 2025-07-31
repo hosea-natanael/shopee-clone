@@ -1,5 +1,5 @@
 import Carousel from "@/app/components/Carousel";
-import ProdukTerlarisItem from "./ProdukTerlarisItem";
+import ProdukTerlarisItem from "@/app/components/ProdukTerlaris/ProdukTerlarisItem";
 
 export default async function ProdukTerlarisCarousel() {
     const data = await fetch("http://localhost:3000/api/produk-terlaris")
