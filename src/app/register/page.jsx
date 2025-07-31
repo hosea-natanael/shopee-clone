@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import RegisterForm from "./components/RegisterForm"
+import RegisterForm from "@/app/components/RegisterForm"
 import Footer from "@/app/components/Footer"
 
 export const metadata = {
