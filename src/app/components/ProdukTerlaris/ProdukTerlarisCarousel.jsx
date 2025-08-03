@@ -2,7 +2,7 @@ import Carousel from "@/app/components/Carousel";
 import ProdukTerlarisItem from "@/app/components/ProdukTerlaris/ProdukTerlarisItem";
 
 export default async function ProdukTerlarisCarousel() {
-    const data = await fetch("http://localhost:3000/api/produk-terlaris")
+    const data = await fetch(process.env.NEXT_PUBLIC_HOST_URL + "/api/produk-terlaris")
     const produkTerlarisItems = await data.json()
 
     return (

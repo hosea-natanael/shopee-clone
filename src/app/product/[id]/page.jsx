@@ -8,7 +8,7 @@ import Quantity from "@/app/product/[id]/components/Quantity"
 
 export default async function Page({params}) {
     const { id } = await params
-    const res = await fetch("http://localhost:3000/api/produk/" + id )
+    const res = await fetch(process.env.NEXT_PUBLIC_HOST_URL + "/api/produk/" + id )
     const json = await res.json()
     const product = json.product
 

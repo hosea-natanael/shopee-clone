@@ -2,7 +2,7 @@ import Carousel from "@/app/components/Carousel"
 import FlashSaleItem from "@/app/components/Flashsale/FlashSaleItem"
 
 export default async function FlashSaleCarousel() {
-    const data = await fetch("http://localhost:3000/api/flash-sale")
+    const data = await fetch(process.env.NEXT_PUBLIC_HOST_URL + "/api/flash-sale")
     const flashSaleItems = await data.json()
     
     return (

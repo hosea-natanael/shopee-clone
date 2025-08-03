@@ -13,7 +13,7 @@ export function useLogin() {
         setError(null)
 
         const body = {username, password}
-        const res = await fetch("http://localhost:3000/api/login", {
+        const res = await fetch(process.env.NEXT_PUBLIC_HOST_URL + "/api/login", {
             method: "POST",
             body: JSON.stringify(body)
         })

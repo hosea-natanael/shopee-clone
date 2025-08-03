@@ -7,7 +7,7 @@ import Username from "@/app/components/Navbar/Username"
 
 
 export default async function Navbar (){
-    const data = await fetch("http://localhost:3000/api/nav-item")
+    const data = await fetch(process.env.NEXT_PUBLIC_HOST_URL + "/api/nav-item")
     const navItems = await data.json()
 
     return (
