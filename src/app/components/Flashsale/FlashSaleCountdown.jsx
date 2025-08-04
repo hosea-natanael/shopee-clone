@@ -6,9 +6,7 @@ const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 export default function FlashSaleCountdown() {
     const [timeLeft, setTimeLeft] = useState(0)
-    const link = process.env.NEXT_PUBLIC_HOST_URL + "/api/flash-sale/countdown"
-    console.log(link)
-    const {data, error, isLoading } = useSWR(link, fetcher)
+    const {data, error, isLoading } = useSWR(process.env.NEXT_PUBLIC_HOST_URL + "/api/flash-sale/countdown", fetcher)
 
     useEffect(()=> {
         const i = setInterval(() => {
